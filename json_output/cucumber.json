@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate Free CRM Home page Test",
+        "description": "",
+        "id": "free-crm-application-test;validate-free-crm-home-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9114811918,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open browser",
+            "match": {
+              "location": "HomePageSteps.user_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14093369,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1048161,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy13.sendKeys(Unknown Source)\r\n\tat com.qa.pages.LoginPage.login(LoginPage.java:42)\r\n\tat stepDef.HomePageSteps.user_enters_username_and_password(HomePageSteps.java:33)\r\n\tat ✽.Then user enters username and password(D:/Selenium Notes/Testing Framework/com.selenium.java/src/main/java/com/qa/features/freeCRM.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "HomePageSteps.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "home page is displayed",
+            "match": {
+              "location": "HomePageSteps.home_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "validate loggedin username",
+            "match": {
+              "location": "HomePageSteps.validate_loggedin_username()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Application Test",
+    "description": "",
+    "id": "free-crm-application-test",
+    "keyword": "Feature",
+    "uri": "D:/Selenium Notes/Testing Framework/com.selenium.java/src/main/java/com/qa/features/freeCRM.feature"
+  }
+]

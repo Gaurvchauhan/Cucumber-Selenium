@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.129953">
+<testcase classname="Free CRM Application Test" name="Validate Free CRM Home page Test" time="9.129953">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)&#13;&#10;&#9;at com.qa.pages.LoginPage.login(LoginPage.java:42)&#13;&#10;&#9;at stepDef.HomePageSteps.user_enters_username_and_password(HomePageSteps.java:33)&#13;&#10;&#9;at ✽.Then user enters username and password(D:/Selenium Notes/Testing Framework/com.selenium.java/src/main/java/com/qa/features/freeCRM.feature:7)&#13;&#10;"><![CDATA[Given User open browser.....................................................passed
+Then user is on login page..................................................passed
+Then user enters username and password......................................failed
+Then home page is displayed.................................................skipped
+Then validate loggedin username.............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at com.qa.pages.LoginPage.login(LoginPage.java:42)
+	at stepDef.HomePageSteps.user_enters_username_and_password(HomePageSteps.java:33)
+	at ✽.Then user enters username and password(D:/Selenium Notes/Testing Framework/com.selenium.java/src/main/java/com/qa/features/freeCRM.feature:7)
+]]></failure>
+</testcase>
+</testsuite>
